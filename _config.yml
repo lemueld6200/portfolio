@@ -4,15 +4,25 @@ email: lemueld6200@afsenyc.org
 github_username: lemueld6200
 title: "Lemuel De Los Santos' Portfolio"
 description: "A Portfolio for Lemuel De Los Santos"
-keywords: ["glitch", "jekyll"]
+show_excerpts: false
 
-theme: minima
+minima:
+  date_format: "%b %-d, %Y"
+
+  social_links:
+    github: lemueld6200
+    rss: rss
 
 # Third party services
 # (Anything you put here will be public!)
 google-analytics:
 
+header_pages:
+- pages/index.md
+- pages/about.md
+
 # Build settings
+theme: minima
 encoding: utf-8
 markdown: kramdown
 plugins:
@@ -35,4 +45,6 @@ exclude:
   - watch.json
   - "*.save.*"
 
+# paginate: 10
+# paginate_path: "/page:num/"
 permalink: /:year/:month/:day/:title
