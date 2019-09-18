@@ -8,13 +8,13 @@ packages:
   /colors/1.0.3:
     dev: false
     engines:
-      node: '>=0.1.90'
+      node: ">=0.1.90"
     resolution:
       integrity: sha1-BDP0TYCWgP3rYO0mDxsMJi6CpAs=
   /corser/2.0.1:
     dev: false
     engines:
-      node: '>= 0.4.0'
+      node: ">= 0.4.0"
     resolution:
       integrity: sha1-jtolLsqrWEDc2XXOuQ2TcMgZ/4c=
   /debug/2.6.9:
@@ -48,7 +48,7 @@ packages:
       debug: 3.1.0
     dev: false
     engines:
-      node: '>=4.0'
+      node: ">=4.0"
     resolution:
       integrity: sha512-t2JCjbzxQpWvbhts3l6SH1DKzSrx8a+SsaVf4h6bG4kOXUuPYS/kg2Lr4gQSb7eemaHqJkOThF1BGyjlUkO1GQ==
   /he/1.2.0:
@@ -63,7 +63,7 @@ packages:
       requires-port: 1.0.0
     dev: false
     engines:
-      node: '>=4.0.0'
+      node: ">=4.0.0"
     resolution:
       integrity: sha512-Taqn+3nNvYRfJ3bGvKfBSRwy1v6eePlm3oc/aWVxZp57DQr5Eq3xhKJi7Z4hZpS8PC3H4qI+Yly5EmFacGuA/g==
   /http-server/0.11.1:
@@ -83,7 +83,7 @@ packages:
   /mime/1.6.0:
     dev: false
     engines:
-      node: '>=4'
+      node: ">=4"
     hasBin: true
     resolution:
       integrity: sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==
@@ -129,7 +129,7 @@ packages:
       mkdirp: 0.5.1
     dev: false
     engines:
-      node: '>= 0.12.0'
+      node: ">= 0.12.0"
     resolution:
       integrity: sha512-Yxe4mTyDzTd59PZJY4ojZR8F+E5e97iq2ZOHPz3HDgSvYC5siNad2tLooQ5y5QHyQhc3xVqvyk/eNA3wuoa7Sw==
   /qs/2.3.3:
@@ -145,7 +145,7 @@ packages:
       qs: 2.3.3
     dev: false
     engines:
-      node: '>= 0.8.0'
+      node: ">= 0.8.0"
     resolution:
       integrity: sha1-GY+9rrolTniLDvy2MLwR8kopWeA=
   /url-join/2.0.5:
@@ -155,10 +155,10 @@ packages:
   /wordwrap/0.0.3:
     dev: false
     engines:
-      node: '>=0.4.0'
+      node: ">=0.4.0"
     resolution:
       integrity: sha1-o9XabNXAvAAI03I0u68b7WMFkQc=
-registry: 'https://registry.npmjs.org/'
+registry: "https://registry.npmjs.org/"
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:

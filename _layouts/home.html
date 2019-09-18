@@ -1,17 +1,36 @@
 ---
 layout: default
 ---
-  
-  <main class="container">
-    <h1>
-      {{ page.title }}
-    </h1>
-    {{ content }}
-    {% for post in site.posts %}
-      <article>
-        <h1><a href="{{ site.base_url }}{{ post.url }}">{{ post.title }}</a></h1>
-        <p>{{ post.date | date_to_string }}</p>
-          <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 156 }}</p>
-      </article>
-    {% endfor %}
-  </main>
+
+<main class="container">
+  <!-- <h1>
+    {{ page.title }}
+  </h1> -->
+  {{ content }}
+
+  {% for post in site.posts %}
+  <div class="card bg-dark">
+    <div class="card-header">
+      <h3 class="card-title">
+        <a href="{{ site.base_url }}{{ post.url }}">{{ post.title }}</a>
+      </h3>
+      <p class="text-muted">{{ post.date | date_to_string }}</p>
+    </div>
+    <div class="card-body">
+      <p class="card-text">
+        {{ post.excerpt | strip_html | strip | truncate: 156 }}
+      </p>
+    </div>
+
+    {% if post.source != blank %}
+    <div class="card-footer">
+      <a href="{{ post.source }}">Source</a>
+    </div>
+    {% endif %}
+  </div>
+
+  <br />
+  <hr />
+  <br />
+  {% endfor %}
+</main>

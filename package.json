@@ -1,21 +1,24 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
-  "name": "jekyll-starter",
-  "version": "0.0.1",
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": false,
+  "description": "A Portfolio for Lemuel De Los Santos",
   "scripts": {
     "install": "bundle install",
+    "serve": "bundle exec jekyll serve",
     "start": "bundle exec jekyll build && http-server _site/ -c-1 -p $PORT"
   },
   "dependencies": {
     "http-server": "^0.11.1"
   },
-  "engines": {
-    "node": "8.x"
-  },
   "repository": {
-    "url": "https://glitch.com/edit/#!/jekyll-starter"
+    "type": "git",
+    "url": "git+https://github.com/lemueld6200/portfolio.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "author": "Lemuel De Los Santos <lemueld6200@afsenyc.org>",
+  "bugs": {
+    "url": "https://github.com/lemueld6200/portfolio/issues"
+  },
+  "homepage": "https://github.com/lemueld6200/portfolio#readme"
 }

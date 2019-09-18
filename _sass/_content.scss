@@ -14,7 +14,8 @@ h1 {
   color: $blue;
 }
 
-p, pre {
+p,
+pre {
   max-width: $content-width;
 }
 
@@ -40,4 +41,3 @@ footer {
   padding-top: 25px;
   border-top: 1px solid lightgrey;
 }
-

@@ -1,6 +1,8 @@
+.git/
 _site/
 _temp/
 node_modules/
 .DS_Store
 .sass-cache
 Gemfile.lock
+.gitignore

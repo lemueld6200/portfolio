@@ -1,15 +1,28 @@
 # Metadata
-title: "My Magical Blog!"
-description: "A cool thing made with Glitch"
+name: Lemuel De Los Santos
+email: lemueld6200@afsenyc.org
+github_username: lemueld6200
+title: "Lemuel De Los Santos' Portfolio"
+description: "A Portfolio for Lemuel De Los Santos"
 keywords: ["glitch", "jekyll"]
+
+theme: minima
 
 # Third party services
 # (Anything you put here will be public!)
-google-analytics: 
+google-analytics:
 
 # Build settings
 encoding: utf-8
 markdown: kramdown
+plugins:
+  - jemoji
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-mentions
+  - jekyll-redirect-from
 exclude:
   - .sass-cache/
   - node_modules/
@@ -21,3 +34,5 @@ exclude:
   - package-lock.json
   - watch.json
   - "*.save.*"
+
+permalink: /:year/:month/:day/:title
