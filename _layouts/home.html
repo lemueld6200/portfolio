@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<div class="home">
+  <!-- {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%} -->
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">
+      {{ page.list_title | default: "Posts" }}
+    </h2>
+
+    <div class="post-list">
+      {%- for post in site.posts -%}
+        <article class="post-preview">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            <h2 class="post-title">
+              {{ post.title | escape }}
+            </h2>
+
+            {%- if post.subtitle != empty -%}
+              <h3 class="post-subtitle">
+                {{ post.subtitle | escape }}
+              </h3>
+            {%- endif -%}
+          </a>
+
+          <span class="post-meta">
+            {{ post.date | date: date_format }}
+          </span>
+
+          {%- if site.show_excerpts -%}
+            <br />
+            <span class="post-entry">
+              {{ post.excerpt | strip_html | strip_newlines | truncate: 100, "..."}}
+            </span>
+          {%- endif -%}
+        </article>
+      {%- endfor -%}
+    </div>
+
+    <p class="feed-subscribe">
+      <a href="{{ 'feed.xml' | relative_url }}">
+        <svg class="svg-icon orange">
+          <use
+            xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"
+          ></use>
+        </svg>
+        <span>Subscribe</span>
+      </a>
+    </p>
+  {%- endif -%}
+</div>

@@ -1,0 +1,127 @@
+---
+---
+
+@import "minima";
+@import "minima/syntax-highlighting";
+
+// $brand-color: #d07922;
+$background-color: #222426; /* a dark, off-black for the bg */
+$text-color: #e6e6e6; /* an off-white for the text */
+$grey-color-light: #565656; /* for the border-top separators */
+$grey-color-dark: #adadad; /* such as the site title in the header, visited */
+
+@import "{{ site.theme }}";
+
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  display: block;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+}
+
+.site-header {
+  position: relative;
+  display: block;
+  padding: 25px;
+  width: 900px;
+  height: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 20px auto;
+  text-align: center;
+  box-sizing: border-box;
+  outline: 1px solid rgba(255, 255, 255, 0.2);
+  outline-offset: -7px;
+  color: #ccc;
+
+  h1 {
+    margin: 0px;
+    letter-spacing: 0.3em;
+  }
+}
+
+.content-container {
+  position: relative;
+  display: flex;
+  width: 900px;
+  margin: 0px auto;
+  height: 100%;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.menu-bar {
+  flex-basis: 20%;
+
+  nav {
+    margin-bottom: 20px;
+
+    & > ul {
+      padding: 0px;
+      list-style: none;
+      margin: 0px;
+      padding: 0 0 20px 0px;
+      border-bottom: 1px dotted #777;
+
+      & > li {
+        margin: 5px 0 0;
+      }
+    }
+  }
+}
+
+.post-list {
+  flex-basis: 80%;
+  padding: 0px 20px;
+  box-sizing: border-box;
+
+  .post-preview {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgb(54, 54, 54);
+
+    .post-title,
+    .post-subtitle {
+      margin: 0;
+      color: #aadd99;
+      text-transform: none;
+      letter-spacing: 1px;
+    }
+    .post-meta {
+      font-size: 18px;
+      font-style: italic;
+      margin: 0 0 10px;
+    }
+    .post-entry {
+      color: #fff;
+      line-height: 1.7em;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+}

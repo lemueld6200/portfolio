@@ -5,7 +5,7 @@
   "private": false,
   "scripts": {
     "install": "bundle install",
-    "serve": "bundle exec jekyll serve",
+    "dev": "bundle exec jekyll serve",
     "start": "bundle exec jekyll build && http-server _site/ -c-1 -p $PORT"
   },
   "dependencies": {

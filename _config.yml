@@ -4,7 +4,7 @@ email: lemueld6200@afsenyc.org
 github_username: lemueld6200
 title: "Lemuel De Los Santos' Portfolio"
 description: "A Portfolio for Lemuel De Los Santos"
-show_excerpts: false
+show_excerpts: true
 
 minima:
   date_format: "%b %-d, %Y"
@@ -18,8 +18,8 @@ minima:
 google-analytics:
 
 header_pages:
-- pages/index.md
-- pages/about.md
+  - pages/index.md
+  - pages/about.md
 
 # Build settings
 theme: minima
@@ -45,6 +45,6 @@ exclude:
   - watch.json
   - "*.save.*"
 
-# paginate: 10
-# paginate_path: "/page:num/"
+# paginate: 5
+# paginate_path: "/:num/"
 permalink: /:year/:month/:day/:title

@@ -4,4 +4,4 @@ layout: page
 permalink: /about
 ---
 
-There is nothing about me
+There is nothing to know about me.
