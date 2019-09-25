@@ -1,0 +1,128 @@
+---
+---
+
+@import "variables";
+@import "{{ site.theme }}";
+@import "syntax-highlighting";
+
+.previous {
+  float: left !important;
+}
+
+.next {
+  float: right !important;
+}
+
+html {
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 18px;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  background-color: #1c1e1f;
+  color: #c5c1b9;
+}
+::-webkit-scrollbar-corner {
+  background-color: #181a1b;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2a2c2e;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+}
+
+.muted {
+  color: #828282;
+}
+
+.site-header {
+  width: 750px;
+  height: 100px;
+  position: relative;
+  display: block;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 20px auto;
+  text-align: center;
+  box-sizing: border-box;
+  outline: 1px solid rgba(255, 255, 255, 0.2);
+  outline-offset: -7px;
+  color: #ccc;
+
+  h1 {
+    margin: 0px;
+    letter-spacing: 0.3em;
+  }
+}
+
+.content-container {
+  position: relative;
+  display: flex;
+  width: 900px;
+  margin: 0px auto;
+  height: 100%;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.wrapper,
+.post-list {
+  flex-basis: 80%;
+  padding: 0px 20px;
+  box-sizing: border-box;
+
+  article {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgb(54, 54, 54);
+
+    .post-title,
+    .post-header,
+    .post-subtitle {
+      margin: 0;
+      color: #a9dc76;
+      text-transform: none;
+      letter-spacing: 1px;
+    }
+    .post-meta {
+      font-size: 18px;
+      font-style: italic;
+      margin: 0 0 10px;
+    }
+    .post-entry {
+      color: #fff;
+      line-height: 1.7em;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .glitchButton {
+    display: none !important;
+  }
+  .site-header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+}

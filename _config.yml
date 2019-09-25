@@ -2,9 +2,10 @@
 name: Lemuel De Los Santos
 email: lemueld6200@afsenyc.org
 github_username: lemueld6200
-title: "Lemuel De Los Santos' Portfolio"
-description: "A Portfolio for Lemuel De Los Santos"
-show_excerpts: false
+title: Lemuel De Los Santos' Portfolio
+description: This is a portfolio for my AP Computer Science for my sophomore year of high school.
+tags: [portfolio, lemueld6200]
+show_excerpts: true
 
 minima:
   date_format: "%b %-d, %Y"
@@ -13,13 +14,15 @@ minima:
     github: lemueld6200
     rss: rss
 
-# Third party services
-# (Anything you put here will be public!)
+disqus:
+  shortname: https-portfolio-lemueld6200-glitch-me
+
 google-analytics:
 
 header_pages:
-- pages/index.md
-- pages/about.md
+  - pages/index.md
+  - pages/about.md
+  - posts/index.html
 
 # Build settings
 theme: minima
@@ -45,6 +48,6 @@ exclude:
   - watch.json
   - "*.save.*"
 
-# paginate: 10
-# paginate_path: "/page:num/"
+paginate: 999
+paginate_path: /posts/:num/
 permalink: /:year/:month/:day/:title

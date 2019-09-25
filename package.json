@@ -1,11 +1,11 @@
 {
-  "name": "portfolio",
+  "name": "portfolio-lemueld6200",
   "version": "0.1.0",
-  "description": "A Portfolio for Lemuel De Los Santos",
+  "description": "This is a portfolio for my AP Computer Science for my sophomore year of highschool.",
   "private": false,
   "scripts": {
     "install": "bundle install",
-    "serve": "bundle exec jekyll serve",
+    "dev": "bundle exec jekyll serve",
     "start": "bundle exec jekyll build && http-server _site/ -c-1 -p $PORT"
   },
   "dependencies": {

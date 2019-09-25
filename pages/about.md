@@ -1,7 +1,7 @@
 ---
-title: About
 layout: page
+title: About
 permalink: /about
 ---
 
-There is nothing about me
+There is nothing to know about me.

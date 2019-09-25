@@ -1,0 +1,35 @@
+<head lang="en">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="msapplication-starturl" content="/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta
+    name="viewport"
+    content="initial-scale=1, width=device-width, viewport-fit=cover"
+  />
+
+  {%- seo -%}
+
+  <!-- Javascript Libraries -->
+  <!-- JQuery -->
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+  
+  <!-- CSS Local -->
+  <link type="text/css" rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" />
+
+  <!-- Javascript Local -->
+  <script type="text/javascript" src="{{ "/assets/js/main.js" | relative_url }}"></script>
+
+  {%- feed_meta -%}
+  {%- if jekyll.environment == "production" and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+</head>
