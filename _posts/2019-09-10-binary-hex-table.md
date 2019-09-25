@@ -16,4 +16,4 @@ comments: true
 
 ![Binary Hex Table](/assets/img/binary-hex-table.png)
 
-> [Result](https://binary-hex-table-lemueld6200.glitch.me/)
+> [Result](https://binary-hex-table-lemueld6200.glitch.me
