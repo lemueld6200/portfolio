@@ -15,7 +15,7 @@ represent actual gold. The gold was scarce and required work to mine
 and refine, so the scarcity and work gave the gold value. This, in
 turn, gave the US dollar value.
 
-[Source](https://cryptocurrencyfacts.com/how-does-cryptocurrency-work-2/)
+> [Source](https://cryptocurrencyfacts.com/how-does-cryptocurrency-work-2/)
 
 ### Pet Robots
 
@@ -29,4 +29,4 @@ you’re on vacation. A Robot could pick out a specific target hat
 despite all of the hats having very similar designs - and having
 never seen pictures of the hats in training data before.
 
-[Source](http://news.mit.edu/2018/mit-csail-robots-can-pick-any-object-after-inspection-0910)
+> [Source](http://news.mit.edu/2018/mit-csail-robots-can-pick-any-object-after-inspection-0910)

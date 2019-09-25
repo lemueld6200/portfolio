@@ -2,6 +2,7 @@
 layout: post
 title: "Binary Hex Table"
 author: "Lemuel De Los Santos"
+comments: true
 ---
 
 **Q. What was my program supposed to do?**  
@@ -15,4 +16,4 @@ author: "Lemuel De Los Santos"
 
 ![Binary Hex Table](/assets/img/binary-hex-table.png)
 
-[Code](https://binary-hex-table-lemueld6200.glitch.me/)
+> [Result](https://binary-hex-table-lemueld6200.glitch.me

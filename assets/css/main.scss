@@ -1,38 +1,43 @@
 ---
 ---
 
-@import "minima";
-@import "minima/syntax-highlighting";
-
-// $brand-color: #d07922;
-$background-color: #222426; /* a dark, off-black for the bg */
-$text-color: #e6e6e6; /* an off-white for the text */
-$grey-color-light: #565656; /* for the border-top separators */
-$grey-color-dark: #adadad; /* such as the site title in the header, visited */
-
+@import "variables";
 @import "{{ site.theme }}";
+@import "syntax-highlighting";
 
-.pull-left {
+.previous {
   float: left !important;
 }
 
-.pull-right {
+.next {
   float: right !important;
 }
 
 html {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   font-size: 18px;
   display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
   position: relative;
 }
 
+::-webkit-scrollbar {
+  background-color: #1c1e1f;
+  color: #c5c1b9;
+}
+::-webkit-scrollbar-corner {
+  background-color: #181a1b;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2a2c2e;
+}
 h1,
 h2,
 h3,
@@ -43,12 +48,16 @@ h6 {
   font-weight: 800;
 }
 
+.muted {
+  color: #828282;
+}
+
 .site-header {
+  width: 750px;
+  height: 100px;
   position: relative;
   display: block;
   padding: 25px;
-  width: 900px;
-  height: 100px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   margin: 20px auto;
   text-align: center;
@@ -74,40 +83,22 @@ h6 {
   box-sizing: border-box;
 }
 
-.menu-bar {
-  flex-basis: 20%;
-
-  nav {
-    margin-bottom: 20px;
-
-    & > ul {
-      padding: 0px;
-      list-style: none;
-      margin: 0px;
-      padding: 0 0 20px 0px;
-      border-bottom: 1px dotted #777;
-
-      & > li {
-        margin: 5px 0 0;
-      }
-    }
-  }
-}
-
+.wrapper,
 .post-list {
   flex-basis: 80%;
   padding: 0px 20px;
   box-sizing: border-box;
 
-  .post-preview {
+  article {
     padding-bottom: 40px;
     margin-bottom: 40px;
     border-bottom: 1px solid rgb(54, 54, 54);
 
     .post-title,
+    .post-header,
     .post-subtitle {
       margin: 0;
-      color: #aadd99;
+      color: #a9dc76;
       text-transform: none;
       letter-spacing: 1px;
     }
@@ -124,4 +115,13 @@ h6 {
 }
 
 @media screen and (max-width: 768px) {
+  .glitchButton {
+    display: none !important;
+  }
+  .site-header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
 }
